@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "expo": "~51.0.28",
+    "expo-av": "^14.0.7",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
     "react-native": "0.74.5",
-    "react-native-video": "^6.4.5",
-    "react-native-webview": "^13.11.1"
+    "react-native-fs": "^2.20.0",
+    "react-native-media-player": "^0.3.5",
+    "react-native-video": "^6.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
