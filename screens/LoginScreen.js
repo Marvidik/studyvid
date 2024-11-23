@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         alignSelf:"center",
         paddingTop:60,
         fontSize:32,
-        color:"#5c4b94",
+        color:"green",
         fontStyle:"italic"
     },
     text2:{
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
         alignSelf:"center",
         paddingTop:30,
         fontSize:28,
-        color:"#5c4b94",
+        color:"green",
         fontStyle:"italic"
     },
 
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     },
     googletext:{
         fontSize:20,
-        color:"#5c4b94",
+        color:"green",
         fontStyle:"italic",
         alignSelf:"center",
         marginLeft:5

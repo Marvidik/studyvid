@@ -5,11 +5,14 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import HomeScreen from './screens/HomeScreen';
 import CategoryScreen from './screens/CategoryScreen';
+import Books from './screens/Books';
+import BookDetailScreen from './screens/BookDetailScreen';
+import Read from './screens/Read';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CategoryScreen/>
+      <Read/>
       
     </View>
   );
