@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet,Image } from 'react-native'
+import { View, Text,StyleSheet,Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 import LoginForm from '../components/LoginForm'
 import CustomButton from '../components/CustomButton'
@@ -17,11 +17,16 @@ export default function LoginScreen() {
 
         <Text style={styles.text2}>----------or----------</Text>
 
-        <View style={styles.companies}>
+        <TouchableOpacity style={styles.googlelogin}>
+                <Image style={styles.googlelogo} source={require("../assets/google.png")}/>
+                <Text style={styles.googletext}>Login with Google</Text>
+        </TouchableOpacity>
+
+        {/* <View style={styles.companies}>
             <ImageRoundComp source={require("../assets/fb.png")}/>
             <ImageRoundComp source={require("../assets/google.png")}/>
             <ImageRoundComp source={require("../assets/apples.png")}/>
-        </View>
+        </View> */}
 
         <View style={styles.create}>
             <Text style={styles.text3}>Dont have an Account </Text>
@@ -98,5 +103,31 @@ const styles = StyleSheet.create({
     create:{
         flexDirection:"row",
         alignSelf:"center"
+    },
+    googlelogin:{
+        backgroundColor:"white",
+        height:75,
+        width:300,
+        flexDirection:"row",
+        alignSelf:"center",
+        borderColor:"white",
+        borderRadius:10,
+        elevation:12,
+        justifyContent:"center",
+        borderWidth:1,
+        marginTop:20
+       
+    },
+    googlelogo:{
+        height:50,
+        width:50,
+        alignSelf:"center"
+    },
+    googletext:{
+        fontSize:20,
+        color:"#5c4b94",
+        fontStyle:"italic",
+        alignSelf:"center",
+        marginLeft:5
     }
 })
